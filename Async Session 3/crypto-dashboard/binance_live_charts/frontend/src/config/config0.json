@@ -1,0 +1,65 @@
+{
+  "crypto": {
+    "timeRanges": {
+      "MONTHLY": {
+        "days": 60,
+        "interval": "4h",
+        "description": "2 months of 4-hour data",
+        "aggregationMinutes": 240,
+        "display": "Monthly"
+      },
+      "WEEKLY": {
+        "days": 14,
+        "interval": "15m",
+        "description": "2 weeks of 15-min data",
+        "aggregationMinutes": 15,
+        "display": "Weekly"
+      },
+      "DAILY": {
+        "days": 2,
+        "interval": "5m", 
+        "description": "2 days of 5-min data",
+        "aggregationMinutes": 5,
+        "display": "Daily"
+      },
+      "HOURLY": {
+        "days": 0.0833,
+        "interval": "1m",
+        "description": "2 hours of 1-min data",
+        "aggregationMinutes": 1,
+        "display": "Hourly"
+      },
+      "MINUTES": {
+        "minutes": 20,
+        "description": "20 minutes of live data",
+        "display": "Minutes"
+      }
+    },
+    "symbols": ["BTCUSDT", "ETHUSDT", "BNBUSDT", "XRPUSDT", "ADAUSDT", "DOGEUSDT"],
+    "binance": {
+      "wsEndpoint": "wss://stream.binance.com:9443/stream",
+      "restEndpoint": "https://api.binance.com/api/v3",
+      "endpoints": {
+        "klines": "/klines"
+      }
+    },
+    "colors": {
+      "BTCUSDT": "#F7931A",
+      "ETHUSDT": "#627EEA",
+      "BNBUSDT": "#F3BA2F",
+      "XRPUSDT": "#23292F",
+      "ADAUSDT": "#0033AD",
+      "DOGEUSDT": "#C3A634"
+    }
+  },
+  "dashboard": {
+    "chartRotation": {
+      "minInterval": 5000,
+      "maxInterval": 10000
+    },
+    "timeSwitch": {
+      "minInterval": 10000,
+      "maxInterval": 20000
+    }
+  }
+}

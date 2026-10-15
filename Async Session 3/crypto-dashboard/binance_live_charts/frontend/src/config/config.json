@@ -1,0 +1,62 @@
+{
+  "crypto": {
+    "binance": {
+      "stream": "wss://stream.binance.com:9443/stream",
+      "historical": "https://api.binance.com/api/v3/klines"
+    },
+    "symbols":  ["BTCUSDT", "ETHUSDT", "BNBUSDT", "XRPUSDT", "ADAUSDT", "DOGEUSDT"],
+    "colors": {
+      "BTCUSDT": "#F7931A",
+      "ETHUSDT": "#627EEA",
+      "BNBUSDT": "#F3BA2F",
+      "XRPUSDT": "#23292F",
+      "ADAUSDT": "#0033AD",
+      "DOGEUSDT": "#C3A634"
+    },
+    "frequencies": {
+      "1s": {
+        "days" : 0,
+        "minutes" : 30,
+        "display": "Thirty Minutes"
+      },
+      "1m": {
+        "days" : 0,
+        "minutes": "60*3",
+        "display": "Three Hours"
+      },
+      "5m": {
+        "days" : 3,
+        "minutes": 0,
+        "display": "Three Days"
+      }, 
+      "30m": {
+        "days" : "7*3",
+        "minutes": 0,
+        "display": "Three Weeks"
+      },  
+      "4h": {
+        "days" : "31*3",
+        "minutes": 0,
+        "display": "Three Months"
+      },
+      "1d": {
+        "days" : "365*3",
+        "minutes": 0,
+        "display": "Three Years"
+      } 
+    },
+    "order": ["1s", "1m", "5m", "30m", "4h", "1d"] 
+  },
+  "dashboard": 
+  {
+    "chartRotation": 
+    {
+      "minInterval": 30000,
+      "maxInterval": 40000
+    },
+    "timeSwitch": {
+      "minInterval": 10000,
+      "maxInterval": 15000
+    }
+  }
+}
